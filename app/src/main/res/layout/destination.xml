@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Destination"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="25dp"
+        android:layout_marginTop="150dp" />
+
+
+    <RadioGroup
+        android:id="@+id/destinationGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="-180dp"
+        android:layout_marginTop="200dp" >
+
+        <!-- Radio Buttons here -->
+        <RadioButton
+            android:id="@+id/greenbeltD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Greenbelt"
+            android:textSize="15dp"
+            android:paddingBottom="-30dp" />
+
+        <RadioButton
+            android:id="@+id/collegeparkD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="College Park U of MD" />
+
+
+        <RadioButton
+            android:id="@+id/hyattsvillecrossingD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hyattsville Crossing" />
+
+
+        <RadioButton
+            android:id="@+id/westhyattsvilleD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="West Hyattsville" />
+
+
+        <RadioButton
+            android:id="@+id/forttottenD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fort Totten" />
+
+
+        <RadioButton
+            android:id="@+id/georgiaavepetworthD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Georgia Ave-Petworth" />
+
+
+        <RadioButton
+            android:id="@+id/columbiaheightsD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Columbia Heights" />
+
+
+        <RadioButton
+            android:id="@+id/ustD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="U St" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/destinationGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="200dp" >
+
+
+        <RadioButton
+            android:id="@+id/shawhowarduD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shaw-Howard U" />
+
+
+        <RadioButton
+            android:id="@+id/mtvernonsqD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mt Vernon Sq" />
+
+
+        <RadioButton
+            android:id="@+id/galleryplaceD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gallery Place" />
+
+
+        <RadioButton
+            android:id="@+id/judiciarysqD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Judiciary Sq" />
+
+
+        <RadioButton
+            android:id="@+id/unionstationD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Union Station" />
+
+
+        <RadioButton
+            android:id="@+id/nomagallaudetuD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NoMa-Gallaudet U" />
+
+
+        <RadioButton
+            android:id="@+id/rhodeislandaveD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rhode Island Ave" />
+
+
+        <RadioButton
+            android:id="@+id/brooklandcuaD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brookland-CUA" />
+
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/destinationSubmit"
+        android:onClick="destinationSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="600dp"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/destinationBack"
+        android:onClick="destinationBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="650dp"
+        android:text="Back" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

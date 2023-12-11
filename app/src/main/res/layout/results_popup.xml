@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF0000FF">
+
+    <TextView
+        android:id="@+id/popText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:text="Choose view details"
+        android:layout_marginTop="0dp"
+        android:textColor="#FFFFFFFF"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/popText"
+        android:layout_marginTop="10dp"
+         >
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/all"
+            android:text="All Details"
+            android:textSize="30dp"
+            android:textColor="#FFFFFFFF" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/directions"
+            android:textSize="30dp"
+            android:textColor="#FFFFFFFF"
+            android:text="Directions" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/averageTimes"
+            android:textSize="30dp"
+            android:textColor="#FFFFFFFF"
+            android:text="Average Times" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/none"
+            android:textSize="30dp"
+            android:textColor="#FFFFFFFF"
+            android:text="No details" />
+
+    </RadioGroup>
+
+    <Button
+        android:onClick="confirmChanges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:text="Confirm changes" />
+
+</RelativeLayout>
